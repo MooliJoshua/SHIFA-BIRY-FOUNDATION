@@ -10,10 +10,10 @@
 
     <meta
         name="description"
-        content="Become a sponsor of HopeBridge Uganda Foundation and support education, healthcare, rural development, child protection and community empowerment."
+        content="Become a sponsor of SHIFA-BIRY FOUNDATION and support education, healthcare, rural development, child protection and community empowerment."
     >
 
-    <title>Become a Sponsor | HopeBridge Uganda Foundation</title>
+    <title>Become a Sponsor | SHIFA-BIRY FOUNDATION</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -694,7 +694,7 @@
                     </h1>
 
                     <p>
-                        HopeBridge Uganda Foundation welcomes individuals,
+                        SHIFA-BIRY FOUNDATION welcomes individuals,
                         companies, institutions and development partners who
                         want to support practical, community-led solutions
                         across Uganda.
@@ -727,14 +727,14 @@
                 </div>
 
                 <div class="intro-content">
-                    <span class="section-tag">Why Sponsor HopeBridge?</span>
+                    <span class="section-tag">Why Sponsor SHIFA-BIRY?</span>
 
                     <h2 class="section-title">
                         Become Part of Our Beginning
                     </h2>
 
                     <p>
-                        We are building HopeBridge Uganda Foundation from the
+                        We are building SHIFA-BIRY FOUNDATION from the
                         ground up with a clear focus on education, healthcare,
                         child welfare, livelihoods and rural development.
                     </p>
@@ -928,7 +928,7 @@
                     </span>
 
                     <h2 class="section-title">
-                        Interested in Supporting HopeBridge?
+                        Interested in Supporting SHIFA-BIRY?
                     </h2>
 
                     <p>
@@ -954,13 +954,13 @@
     <input
         type="hidden"
         name="subject"
-        value="New HopeBridge Sponsorship Enquiry"
+        value="New SHIFA-BIRY Sponsorship Enquiry"
     >
 
     <input
         type="hidden"
         name="from_name"
-        value="HopeBridge Uganda Foundation Website"
+        value="SHIFA-BIRY FOUNDATION Website"
     >
 
 <div class="form-grid">
@@ -1037,7 +1037,7 @@
             id="message"
             name="message"
             required
-            placeholder="How would you like to support or partner with HopeBridge?"
+            placeholder="How would you like to support or partner with SHIFA-BIRY?"
         ></textarea>
     </div>
 
@@ -1054,7 +1054,7 @@
 </div>
           
              <p class="form-note">
-    Your sponsorship enquiry will be sent securely to HopeBridge Uganda Foundation.
+    Your sponsorship enquiry will be sent securely to SHIFA-BIRY FOUNDATION.
 </p>
 
                 </form>
@@ -1075,7 +1075,7 @@
                         <div class="brand-logo"></div>
 
                         <div class="brand-text">
-                            <strong>HopeBridge</strong>
+                            <strong>SHIFA-BIRY</strong>
                             <span>Uganda Foundation</span>
                         </div>
                     </a>
@@ -1121,7 +1121,7 @@
             <div class="footer-bottom">
                 <p>
                     © <span id="currentYear"></span>
-                    HopeBridge Uganda Foundation.
+                    SHIFA-BIRY FOUNDATION.
                 </p>
 
                 <p>
@@ -1133,10 +1133,10 @@
     </footer>
 
     <script>
-        lucide.createIcons();
+        if(window.lucide) lucide.createIcons();
 
         const menuButton = document.getElementById("menuButton");
-        const navigation = document.getElementById("navigation");
+        const navigation = document.getElementById("navigation") || document.querySelector(".shifa-links");
 
         menuButton?.addEventListener("click", () => {
             const open = navigation.classList.toggle("open");
@@ -1145,7 +1145,7 @@
                 ? '<i data-lucide="x"></i>'
                 : '<i data-lucide="menu"></i>';
 
-            lucide.createIcons();
+            if(window.lucide) lucide.createIcons();
         });
 
         document.getElementById("currentYear") && (document.getElementById("currentYear").textContent =
