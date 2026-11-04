@@ -35,3 +35,19 @@ html[data-shifa-theme] .shifa-theme-toggle{position:static!important;right:auto!
 html[data-shifa-theme="light"] .shifa-theme-toggle{background:#111!important;color:#fff!important;border-color:#111!important}
 html[data-shifa-theme="dark"] .shifa-theme-toggle{background:#fff!important;color:#000!important;border-color:#fff!important}
 @media(max-width:850px){.shifa-theme-nav-slot{padding:7px 0}}
+
+/* Hero and nested elements must obey selected monochrome theme. */
+html[data-shifa-theme="light"] .hero,html[data-shifa-theme="light"] .hero-inner,html[data-shifa-theme="light"] .hero-copy,html[data-shifa-theme="light"] .hero-content,html[data-shifa-theme="light"] .hero-visual,html[data-shifa-theme="light"] .hero .container{background-color:#fff!important;background-image:none!important;color:#111!important}
+html[data-shifa-theme="dark"] .hero,html[data-shifa-theme="dark"] .hero-inner,html[data-shifa-theme="dark"] .hero-copy,html[data-shifa-theme="dark"] .hero-content,html[data-shifa-theme="dark"] .hero-visual,html[data-shifa-theme="dark"] .hero .container{background-color:#000!important;background-image:none!important;color:#fff!important}
+html[data-shifa-theme="light"] .hero h1 *,html[data-shifa-theme="light"] .hero h2 *,html[data-shifa-theme="light"] .hero em,html[data-shifa-theme="light"] .hero .eyebrow,html[data-shifa-theme="light"] .hero .hero-tag,html[data-shifa-theme="light"] .hero span:not(.founder-label span),html[data-shifa-theme="light"] .hero strong:not(.founder-label strong){color:#111!important}
+html[data-shifa-theme="dark"] .hero h1 *,html[data-shifa-theme="dark"] .hero h2 *,html[data-shifa-theme="dark"] .hero em,html[data-shifa-theme="dark"] .hero .eyebrow,html[data-shifa-theme="dark"] .hero .hero-tag,html[data-shifa-theme="dark"] .hero span:not(.founder-label span),html[data-shifa-theme="dark"] .hero strong:not(.founder-label strong){color:#fff!important}
+html[data-shifa-theme="light"] .hero .btn-outline,html[data-shifa-theme="light"] .hero .button-outline{border:1px solid #111!important;color:#111!important;background:#fff!important}
+html[data-shifa-theme="dark"] .hero .btn-outline,html[data-shifa-theme="dark"] .hero .button-outline{border:1px solid #fff!important;color:#fff!important;background:#000!important}
+html[data-shifa-theme="light"] .hero .btn-gold,html[data-shifa-theme="light"] .hero .button-primary{background:#111!important;color:#fff!important}
+html[data-shifa-theme="dark"] .hero .btn-gold,html[data-shifa-theme="dark"] .hero .button-primary{background:#fff!important;color:#000!important}
+html[data-shifa-theme="light"] .hero .eyebrow:after,html[data-shifa-theme="light"] .hero h2:after{background:#111!important}
+html[data-shifa-theme="dark"] .hero .eyebrow:after,html[data-shifa-theme="dark"] .hero h2:after{background:#fff!important}
+html[data-shifa-theme="light"] .hero-visual{border-color:#111!important}
+html[data-shifa-theme="dark"] .hero-visual{border-color:#fff!important}
+html[data-shifa-theme="light"] .founder-label,html[data-shifa-theme="light"] .founder-label *{color:#111!important;background:#fff!important}
+html[data-shifa-theme="dark"] .founder-label,html[data-shifa-theme="dark"] .founder-label *{color:#fff!important;background:#000!important}
