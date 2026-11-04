@@ -1,0 +1,25 @@
+/* SHIFA-BIRY FOUNDATION | Professional visual system */
+:root{--primary:#087f74;--primary-dark:#065f58;--primary-light:#e5f5f1;--navy:#102b43;--navy-light:#204763;--navy-dark:#0a2032;--orange:#d4a85c;--gold:#d4a85c;--blue:#187f9c;--off-white:#f7f9fc;--light-gray:#e8edf2;--gray:#596b7a;--dark:#142b3c;--shadow-small:0 8px 24px rgba(16,43,67,.06);--shadow-medium:0 18px 48px rgba(16,43,67,.12);--radius-small:12px;--radius-medium:18px;--radius-large:24px}
+body{font-family:"DM Sans",sans-serif;line-height:1.7;letter-spacing:-.008em;color:#20374a;background:#fff}
+h1,h2,h3,h4,h5,h6,.section-title,.hero-title,.brand-text strong{font-family:"Plus Jakarta Sans",sans-serif;letter-spacing:-.035em}
+.section-title{font-weight:800;line-height:1.16}
+.section{padding-block:clamp(60px,8vw,104px)}
+.section-description{line-height:1.85}
+.section-tag{color:#087f74;letter-spacing:.12em;font-weight:800}
+.site-header{background:#fff;box-shadow:0 3px 24px rgba(16,43,67,.06)}
+.brand-text strong{font-size:1.04rem;font-weight:800;letter-spacing:-.035em}
+.brand-text span{font-size:.69rem;letter-spacing:.17em;font-weight:700}
+.navigation a{font-weight:700}
+.button,.nav-donate{border-radius:12px;font-family:"DM Sans",sans-serif;letter-spacing:.02em;font-weight:800;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.button-primary{background:#087f74;color:#fff}
+.button-primary:hover{background:#065f58;box-shadow:0 12px 24px rgba(8,127,116,.2)}
+.program-card,.impact-item,.feature-card,.project-card,.value-card,.blog-card{border-radius:20px;transition:transform .2s ease,box-shadow .2s ease}
+.program-card:hover,.project-card:hover,.feature-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(16,43,67,.1)}
+input,textarea,select{font-family:"DM Sans",sans-serif;border-radius:10px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #d4a85c;outline-offset:3px}
+#founder{background:linear-gradient(125deg,#f5faf9 0%,#f7f9fc 100%)!important}
+#founder img{border-radius:24px!important}
+#founder h3{font-family:"Plus Jakarta Sans",sans-serif;letter-spacing:-.03em}
+.footer{background:#102b43;color:#e9f2f5}
+@media(max-width:760px){.section{padding-block:60px}.container{width:min(100% - 32px,1180px)}.section-title{font-size:clamp(1.85rem,7vw,2.5rem)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
