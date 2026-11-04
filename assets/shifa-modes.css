@@ -51,3 +51,18 @@ html[data-shifa-theme="light"] .hero-visual{border-color:#111!important}
 html[data-shifa-theme="dark"] .hero-visual{border-color:#fff!important}
 html[data-shifa-theme="light"] .founder-label,html[data-shifa-theme="light"] .founder-label *{color:#111!important;background:#fff!important}
 html[data-shifa-theme="dark"] .founder-label,html[data-shifa-theme="dark"] .founder-label *{color:#fff!important;background:#000!important}
+
+/* Audit repair: legacy pages use page-hero and nested background panels. */
+html[data-shifa-theme="light"] main :is(section,article,.page-hero,.page-hero-content,.hero-content,.hero-overlay,.container,.content-section,.section-header,.section-content,.program-card,.project-card,.value-card,.blog-card,.info-card,.feature-card,.stat-card,.impact-card,.form-card,.contact-card,.donation-card,.gallery-card,.faq-item,.timeline-item,.mission-card,.vision-card,.founder-card,.card-body,.card-content){background-color:#fff!important;background-image:none!important;color:#111!important}
+html[data-shifa-theme="dark"] main :is(section,article,.page-hero,.page-hero-content,.hero-content,.hero-overlay,.container,.content-section,.section-header,.section-content,.program-card,.project-card,.value-card,.blog-card,.info-card,.feature-card,.stat-card,.impact-card,.form-card,.contact-card,.donation-card,.gallery-card,.faq-item,.timeline-item,.mission-card,.vision-card,.founder-card,.card-body,.card-content){background-color:#000!important;background-image:none!important;color:#fff!important}
+html[data-shifa-theme="light"] main :is(h1,h2,h3,h4,h5,h6,p,small,li,blockquote,span:not(.pillar-icon):not(.logo-mark),strong,em){color:#111!important}
+html[data-shifa-theme="dark"] main :is(h1,h2,h3,h4,h5,h6,p,small,li,blockquote,span:not(.pillar-icon):not(.logo-mark),strong,em){color:#fff!important}
+html[data-shifa-theme="light"] main a:not(.btn):not(.button):not(.btn-gold):not(.button-primary){color:#111!important}
+html[data-shifa-theme="dark"] main a:not(.btn):not(.button):not(.btn-gold):not(.button-primary){color:#fff!important}
+html[data-shifa-theme="light"] .page-hero,html[data-shifa-theme="light"] .page-hero *{--primary:#111;--accent:#111}
+html[data-shifa-theme="dark"] .page-hero,html[data-shifa-theme="dark"] .page-hero *{--primary:#fff;--accent:#fff}
+html[data-shifa-theme] .reveal{opacity:1!important;visibility:visible!important;transform:none!important}
+html[data-shifa-theme="light"] .shifa-form-section,html[data-shifa-theme="light"] .shifa-form{background:#fff!important;color:#111!important}
+html[data-shifa-theme="dark"] .shifa-form-section,html[data-shifa-theme="dark"] .shifa-form{background:#000!important;color:#fff!important}
+html[data-shifa-theme="light"] .shifa-form input,html[data-shifa-theme="light"] .shifa-form select,html[data-shifa-theme="light"] .shifa-form textarea{background:#fff!important;color:#111!important}
+html[data-shifa-theme="dark"] .shifa-form input,html[data-shifa-theme="dark"] .shifa-form select,html[data-shifa-theme="dark"] .shifa-form textarea{background:#000!important;color:#fff!important}
