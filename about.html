@@ -1043,7 +1043,7 @@
                 <div class="page-hero-content reveal">
 
                     <span class="page-hero-tag">
-                        About HopeBridge
+                        About SHIFA-BIRY
                     </span>
 
                     <h1>
@@ -1586,10 +1586,10 @@
     </button>
 
     <script>
-        lucide.createIcons();
+        if(window.lucide) lucide.createIcons();
 
         const menuButton = document.getElementById("menuButton");
-        const navigation = document.getElementById("navigation");
+        const navigation = document.getElementById("navigation") || document.querySelector(".shifa-links");
 
         menuButton?.addEventListener("click", () => {
             const menuIsOpen = navigation.classList.toggle("open");
@@ -1603,15 +1603,15 @@
                 ? '<i data-lucide="x"></i>'
                 : '<i data-lucide="menu"></i>';
 
-            lucide.createIcons();
+            if(window.lucide) lucide.createIcons();
         });
 
-        navigation.querySelectorAll("a").forEach((link) => {
+        navigation?.querySelectorAll("a").forEach((link) => {
             link.addEventListener("click", () => {
                 navigation.classList.remove("open");
                 menuButton.setAttribute("aria-expanded", "false");
                 menuButton.innerHTML = '<i data-lucide="menu"></i>';
-                lucide.createIcons();
+                if(window.lucide) lucide.createIcons();
             });
         });
 
