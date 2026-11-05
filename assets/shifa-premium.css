@@ -3,7 +3,7 @@
 body{margin:0;font-family:"DM Sans",system-ui,sans-serif!important}
 #main-content{max-width:none;padding:0}
 .premium-hero{position:relative;isolation:isolate;min-height:610px;display:flex;align-items:center;overflow:hidden;background:#172321;color:#fff!important}
-.premium-hero-photo{position:absolute;inset:0;z-index:-2;background-image:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&q=85");background-size:cover;background-position:center 46%}
+.premium-hero-photo{position:absolute;inset:0;z-index:-2;background-image:none;background-size:cover;background-position:center 46%}
 .premium-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.75) 35%,rgba(0,0,0,.13) 100%)}
 .premium-hero-inner{width:min(1220px,calc(100% - 64px));margin:auto;padding:70px 0}
 .premium-overline{font-size:.78rem!important;letter-spacing:.32em;font-weight:800;color:#fff!important}
@@ -29,10 +29,10 @@ body{margin:0;font-family:"DM Sans",system-ui,sans-serif!important}
 .premium-program-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
 .premium-program{height:315px;position:relative;overflow:hidden;border-radius:18px;text-decoration:none!important;color:#fff!important;background:#263b32;isolation:isolate;display:flex;align-items:flex-end}
 .premium-program-art{position:absolute;inset:0;z-index:-2;background-size:cover;background-position:center}
-.education .premium-program-art{background-image:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=700&q=80")}
-.health .premium-program-art{background-image:url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=700&q=80")}
-.livelihood .premium-program-art{background-image:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=700&q=80")}
-.community .premium-program-art{background-image:url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=700&q=80")}
+.education .premium-program-art{background-image:none}
+.health .premium-program-art{background-image:none}
+.livelihood .premium-program-art{background-image:none}
+.community .premium-program-art{background-image:none}
 .premium-program:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(0,0,0,.92),rgba(0,0,0,.03) 90%)}
 .premium-program-art span{position:absolute;left:18px;bottom:132px;font-size:2rem;color:#fff}
 .premium-program-copy{padding:22px;position:relative;width:100%}
@@ -44,7 +44,7 @@ body{margin:0;font-family:"DM Sans",system-ui,sans-serif!important}
 .premium-founder-photo img{width:100%;height:100%;object-fit:cover;object-position:top}
 .premium-founder-copy p:not(.premium-kicker){color:var(--sf-muted);line-height:1.75}
 .premium-founder-copy .premium-button{margin-top:14px}
-.premium-story-panel{height:340px;border-radius:20px;display:flex;align-items:end;overflow:hidden;background:linear-gradient(0deg,#000d,#0002),url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=850&q=80") center/cover;color:#fff}
+.premium-story-panel{height:340px;border-radius:20px;display:flex;align-items:end;overflow:hidden;background:linear-gradient(0deg,#000d,#0002),none center/cover;color:#fff}
 .premium-story-panel-inner{padding:24px}.premium-story-icon{display:grid;place-items:center;border:2px solid #fff;border-radius:50%;width:55px;height:55px}
 .premium-story-panel h3{color:#fff!important;margin-bottom:4px}.premium-story-panel p{color:#eee!important;font-size:.9rem;margin:0 0 8px}.premium-story-panel a{color:#fff!important;font-weight:700}
 .premium-involved{text-align:center;padding:78px 24px;background:#f6f4ef;color:#111}
