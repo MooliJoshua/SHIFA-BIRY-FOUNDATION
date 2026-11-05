@@ -1,0 +1,39 @@
+/* SHIFA-BIRY FOUNDATION unified 2026 design */
+:root{color-scheme:light;--sf-bg:#fff;--sf-fg:#111;--sf-muted:#555;--sf-line:#e5e5e5;--sf-card:#fff;--sf-accent:#111}
+html[data-sf-theme="dark"]{color-scheme:dark;--sf-bg:#000;--sf-fg:#fff;--sf-muted:#c9c9c9;--sf-line:#333;--sf-card:#0d0d0d;--sf-accent:#fff}
+html,body{background:var(--sf-bg)!important;color:var(--sf-fg)!important}
+body{font-family:"DM Sans",Inter,system-ui,sans-serif!important;line-height:1.7}
+body :is(h1,h2,h3,h4,p,li,label,small,strong){color:inherit}
+body :is(.hero,.cta,.intro,.pillars,.card,.pillar,.get-involved,.section,.content,.main,.topbar,.feature,.feature-card,.stat,.stat-card,.project-card,.program-card){background-color:var(--sf-bg)!important;color:var(--sf-fg)!important;background-image:none!important}
+body :is(.card,.pillar,.feature-card,.stat-card,.project-card,.program-card){background:var(--sf-card)!important;border:1px solid var(--sf-line)!important;box-shadow:none!important;border-radius:18px!important}
+body :is(.hero p,.card p,.intro p,.pillar p,.section p){color:var(--sf-muted)!important}
+body :is(.hero h1,.hero h2,.eyebrow){color:var(--sf-fg)!important}
+body :is(.btn,.btn-gold,.btn-outline,.btn.secondary){background:var(--sf-accent)!important;color:var(--sf-bg)!important;border:1px solid var(--sf-accent)!important}
+body :is(input,textarea,select){background:var(--sf-card)!important;color:var(--sf-fg)!important;border:1px solid var(--sf-line)!important}
+body :is(footer,.footer){background:var(--sf-card)!important;color:var(--sf-fg)!important;border-top:1px solid var(--sf-line)!important}
+body :is(footer a,.footer a){color:var(--sf-fg)!important}
+body .hero{border-bottom:1px solid var(--sf-line)!important}
+body .hero:before{display:none!important}
+body .hero-visual{border-color:var(--sf-fg)!important}
+body .founder-label{background:var(--sf-card)!important;color:var(--sf-fg)!important}
+body .pillars{margin-top:0!important}
+body .shifa-reveal,body .reveal{opacity:1!important;visibility:visible!important;transform:none!important}
+#sf-header{position:sticky;top:0;z-index:9999;background:var(--sf-bg);border-bottom:1px solid var(--sf-line);color:var(--sf-fg);font-family:inherit}
+#sf-header *{box-sizing:border-box}
+.sf-bar{max-width:1240px;margin:auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.sf-brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--sf-fg);font-weight:850;font-size:1rem;letter-spacing:-.03em;line-height:1.15}
+.sf-mark{display:grid;place-items:center;width:42px;height:42px;background:var(--sf-fg);color:var(--sf-bg);border-radius:12px;font-size:24px}
+.sf-links{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.sf-links a,.sf-menu a{color:var(--sf-fg)!important;text-decoration:none!important;font-size:.84rem;font-weight:700}
+.sf-links a:hover,.sf-menu a:hover{opacity:.65}
+.sf-tools{display:flex;align-items:center;gap:8px}
+.sf-control{cursor:pointer;border:1px solid var(--sf-line);border-radius:10px;background:var(--sf-card);color:var(--sf-fg);padding:9px 12px;font:700 .9rem system-ui}
+.sf-donate{background:var(--sf-fg)!important;color:var(--sf-bg)!important;border-radius:10px;padding:10px 15px}
+.sf-menu{display:none;border-top:1px solid var(--sf-line);padding:18px 24px;max-height:75vh;overflow:auto;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;max-width:1240px;margin:auto}
+.sf-menu.sf-open{display:grid}
+.sf-menu h3{font-size:.8rem!important;text-transform:uppercase;letter-spacing:.12em;margin:0 0 12px;color:var(--sf-muted)!important}
+.sf-menu a{display:block;padding:7px 0}
+.sf-current{text-decoration:underline!important;text-underline-offset:5px!important}
+body>header:not(#sf-header),body>.topbar,body>.header{display:none!important}
+@media(max-width:1050px){.sf-links{display:none}.sf-menu{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.sf-bar{padding:12px 16px}.sf-brand{font-size:.88rem}.sf-menu{grid-template-columns:1fr}.sf-mark{width:36px;height:36px}.sf-bar{gap:8px}}
