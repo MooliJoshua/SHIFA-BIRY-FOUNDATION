@@ -3,7 +3,7 @@
 const photoExt=/\.(jpe?g|png|webp|gif|avif)$/i,videoExt=/\.(mp4|webm|ogg|mov|m4v)$/i;
 const encodePath=s=>s.split("/").map(encodeURIComponent).join("/");
 async function listing(folder){const res=await fetch(api+encodeURIComponent(folder),{headers:{Accept:"application/vnd.github+json"}});if(!res.ok)throw Error("Media folder unavailable ("+res.status+")");const items=await res.json();return (Array.isArray(items)?items:[]).filter(x=>x.type==="file").map(x=>({name:x.name,path:x.path,url:raw+encodePath(x.path)}));}
-function meaningfulPhoto(f){return photoExt.test(f.name)&&!/^(shifa|logo|favicon|icon|profile)(\.|-|_)/i.test(f.name)}
+function meaningfulPhoto(f){return photoExt.test(f.name)&&!/^(shifa|logo|favicon|icon|profile|foundation-founder)(\.|-|_)/i.test(f.name)}
 function title(name){const base=name.replace(/\.[^.]+$/,"").replace(/[_-]+/g," ").trim();if(/^(whats\s*app\s*)?(video|vid)\b/i.test(base)||/^(img|dsc|mov)\s*\d/i.test(base)||/^whats\s*app\b/i.test(base))return "Community Moments & Foundation Activities";return base.replace(/\b\w/g,c=>c.toUpperCase())}
 function photoCard(f){const a=document.createElement("a");a.className="sf-media-card";a.href=f.url;a.target="_blank";a.rel="noopener";const im=document.createElement("img");im.src=f.url;im.alt="Foundation photograph: "+title(f.name);im.loading="lazy";const p=document.createElement("span");p.textContent=title(f.name);a.append(im,p);return a}
 async function update(){let photos=[];try{photos=(await listing("images")).filter(meaningfulPhoto)}catch(e){console.warn(e)}
