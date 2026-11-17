@@ -105,3 +105,9 @@ html[data-sf-theme="dark"] body .premium-involved :is(h2,p){color:#fff!important
 img{max-width:100%;height:auto}
 @media(max-width:700px){#sf-header .sf-bar{gap:10px}#sf-header .sf-tools{gap:6px}#sf-header .sf-brand{min-width:0}#sf-header .sf-menu{max-height:calc(100dvh - 80px);overflow-y:auto}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Foundation identity belongs in the shared navigation, not a second banner. */
+#sf-header .sf-brand-logo{display:block;width:clamp(150px,18vw,230px);height:auto;max-height:62px;object-fit:contain;flex-shrink:0}
+#sf-header .sf-brand{flex-shrink:0}
+@media(max-width:650px){#sf-header .sf-brand-logo{width:clamp(132px,39vw,190px);max-height:52px}}
+@media(max-width:380px){#sf-header .sf-brand-logo{width:125px}#sf-header .sf-donate{display:none}}
