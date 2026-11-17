@@ -97,3 +97,11 @@ html[data-sf-theme="dark"] body .premium-involved :is(h2,p){color:#fff!important
 #sf-header .sf-menu{background:var(--sf-bg)!important}
 #sf-header .sf-menu a{color:var(--sf-fg)!important}
 #sf-header .sf-control:not(.sf-donate){background:var(--sf-card)!important;color:var(--sf-fg)!important}
+
+/* Accessibility and responsive polish */
+.sf-skip{position:fixed;left:12px;top:-90px;z-index:999999;background:#fff;color:#111;padding:12px 18px;border:2px solid #111;border-radius:8px;font-weight:800}
+.sf-skip:focus{top:12px}
+#sf-header a:focus-visible,#sf-header button:focus-visible,main a:focus-visible,main button:focus-visible{outline:3px solid #c28c20!important;outline-offset:3px}
+img{max-width:100%;height:auto}
+@media(max-width:700px){#sf-header .sf-bar{gap:10px}#sf-header .sf-tools{gap:6px}#sf-header .sf-brand{min-width:0}#sf-header .sf-menu{max-height:calc(100dvh - 80px);overflow-y:auto}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
