@@ -111,3 +111,34 @@ img{max-width:100%;height:auto}
 #sf-header .sf-brand{flex-shrink:0}
 @media(max-width:650px){#sf-header .sf-brand-logo{width:clamp(132px,39vw,190px);max-height:52px}}
 @media(max-width:380px){#sf-header .sf-brand-logo{width:125px}#sf-header .sf-donate{display:none}}
+
+/* Mobile-first navigation refinements */
+@media(max-width:760px){
+ #sf-header .sf-bar{padding:10px 14px;gap:8px;min-height:68px;flex-wrap:nowrap}
+ #sf-header .sf-brand{flex:1 1 auto;min-width:0;overflow:hidden}
+ #sf-header .sf-brand-logo{width:clamp(122px,35vw,190px);max-width:100%;height:auto;max-height:56px}
+ #sf-header .sf-links{display:none!important}
+ #sf-header .sf-tools{flex:0 0 auto;gap:6px}
+ #sf-header .sf-control{min-height:40px;padding:8px 10px;font-size:13px;white-space:nowrap}
+ #sf-header .sf-menu{grid-template-columns:repeat(2,minmax(0,1fr));padding:16px;gap:16px;max-height:calc(100dvh - 70px);overflow-y:auto}
+ #sf-header .sf-menu a{padding:10px 4px;min-height:42px}
+}
+@media(max-width:480px){
+ #sf-header .sf-bar{padding:9px 10px;gap:5px}
+ #sf-header .sf-brand-logo{width:clamp(112px,33vw,150px)}
+ #sf-header .sf-tools{gap:4px}
+ #sf-header .sf-control{font-size:12px;padding:8px 9px}
+ #sf-header .sf-donate{display:none!important}
+ #sf-header .sf-menu{grid-template-columns:1fr}
+ .premium-hero-inner{width:calc(100% - 32px)!important}
+ .premium-hero h1{font-size:clamp(2.1rem,9vw,3rem)!important;overflow-wrap:normal;line-height:1.12!important}
+ .premium-actions{gap:10px}
+ .premium-actions .premium-button{max-width:100%;min-height:44px;padding:12px 14px;font-size:.83rem}
+ .premium-program-grid{grid-template-columns:1fr 1fr;gap:10px}
+ .premium-program{min-width:0}
+ .premium-ribbon{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .premium-ribbon-note{grid-column:1/-1}
+ .premium-story{grid-template-columns:minmax(0,1fr)!important}
+ .premium-explore-links{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:350px){#sf-header .sf-brand-logo{width:105px}#sf-header .sf-control{padding:7px;font-size:11px}.premium-program-grid{grid-template-columns:1fr}}
